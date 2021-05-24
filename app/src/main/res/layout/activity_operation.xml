@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_bottom"
+    android:orientation="vertical"
+    tools:context=".activity.OperationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/controlshow"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/controlshow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1sp"
+            android:gravity="center|right">
+
+            <ImageView
+                android:id="@+id/iv_electric"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="10sp"
+                android:background="@mipmap/iv_electric4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/controlshow"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_connect_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20sp"
+            android:text="@string/ac_operation_state1_tv"
+            android:textColor="@color/controlshowtwo" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/controlshow"></LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="5sp"
+            app:cardCornerRadius="5sp"
+            app:cardElevation="2sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/l" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_max" />
+
+                        <TextView
+                            android:id="@+id/tv_max_left"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_max_tv"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:src="@mipmap/img_avg" />
+
+                        <TextView
+                            android:id="@+id/tv_mean_left"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_mean_tv"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_min" />
+
+                        <TextView
+                            android:id="@+id/tv_min_left"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_min_tv"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:src="@mipmap/img_a" />
+
+                        <TextView
+                            android:id="@+id/tv_factor_left"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_a_tv"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_moment" />
+
+                        <TextView
+                            android:id="@+id/tv_moment_left"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_min_tv"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:src="@mipmap/img_angle" />
+
+                        <TextView
+                            android:id="@+id/tv_angle_left"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_min_tv"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/r" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_max" />
+
+                        <TextView
+                            android:id="@+id/tv_max_right"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_max_tv"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:src="@mipmap/img_avg" />
+
+                        <TextView
+                            android:id="@+id/tv_mean_right"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_mean_tv"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_min" />
+
+                        <TextView
+                            android:id="@+id/tv_min_right"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_min_tv"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:src="@mipmap/img_a" />
+
+                        <TextView
+                            android:id="@+id/tv_factor_right"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_a_tv"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_moment" />
+
+                        <TextView
+                            android:id="@+id/tv_moment_right"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_min_tv"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:src="@mipmap/img_angle" />
+
+                        <TextView
+                            android:id="@+id/tv_angle_right"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/ac_operation_min_tv"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_cut_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_fixed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/ac_operation_fixed_btn"
+                android:textColor="@color/blue"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/ac_operation_follow_btn"
+                android:textColor="@color/blue"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/rev_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       >
+
+        <TextView
+            android:id="@+id/rev_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:textColor="@color/controlshow" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_fixed"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/nullo"
+                android:drawableTop="@drawable/btn_fixed"
+                android:text="@string/ac_operation_fixed_btn"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <!--<Button-->
+                <!--android:id="@+id/send_btn"-->
+                <!--android:layout_width="60sp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10sp"-->
+                <!--android:background="@color/nullo"-->
+                <!--android:drawableTop="@drawable/btn_random"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/ac_operation_follow_btn"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="15sp" />-->
+
+            <Button
+                android:id="@+id/btn_random"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/nullo"
+                android:drawableTop="@drawable/btn_setinginfo"
+                android:text="@string/ac_operation_follow_btn"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_get_info"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/nullo"
+                android:drawableTop="@drawable/btn_getinfo"
+                android:text="@string/ac_operation_get_torque_btn"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50sp">
+
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/nullo"
+                android:drawableTop="@mipmap/stop"
+                android:text="@string/ac_operation_start_btn"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_person_info"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/nullo"
+                android:drawableTop="@drawable/btn_setinginfo"
+                android:text="@string/ac_operation_setting_person_btn"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/btn_reconnection"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/nullo"
+                android:drawableTop="@drawable/btn_reconnection"
+                android:text="@string/ac_operation_reconnection_btn"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+          <!---->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

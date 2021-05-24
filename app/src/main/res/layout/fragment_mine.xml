@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:background="@color/controlshow"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_image"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="20sp"
+                android:src="@mipmap/head_image"
+                app:civ_border_color="@color/controlshow"
+                app:civ_border_width="1sp" />
+
+            <EditText
+                android:id="@+id/et_mine_iphone"
+                android:layout_width="150sp"
+                android:layout_height="30sp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="182" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/ibtn_user"
+                    android:layout_width="100sp"
+                    android:layout_height="80sp"
+                    android:background="#00000000"
+                    android:src="@mipmap/back" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_margin="10sp"
+            app:cardCornerRadius="5sp"
+            app:cardElevation="1sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/nullo"
+                    android:text="历史数据"
+                    android:textColor="@color/controlshow"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_mn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/nullo"
+                    android:textColor="@color/controlshow"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</FrameLayout>

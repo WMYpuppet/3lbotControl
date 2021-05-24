@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DrawActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/controlshowtwo"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/controlshowtwo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginBottom="1sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_line"
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="20sp"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="@color/nullo"
+            android:gravity="center"
+            android:text="2021"
+            android:textColor="@color/controlshow"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_month"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="@color/nullo"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/controlshow"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="@color/nullo"
+            android:text="查询"
+            android:textColor="@color/controlshow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
